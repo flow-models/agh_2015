@@ -1,0 +1,53 @@
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Dataset name} & XXX & \\
+\textbf{Exporter} & XXX & \\
+\textbf{L2 technology} & XXX & \\
+\textbf{Sampling rate} & none & \\
+\textbf{Active timeout} & XXX & seconds \\
+\textbf{Inactive timeout} & XXX & seconds \\
+\midrule
+\textbf{Number of flows} & 1 923 281 733 & flows \\
+\textbf{Number of packets} & 247 455 693 564 & packets \\
+\textbf{Number of octets} & 227 914 104 564 250 & octets \\
+\textbf{Average flow length} & 128.663258 & packets \\
+\textbf{Average packet size} & 921.029948 & bytes \\
+\bottomrule
+\end{tabular}
+
+
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Flows of length up to} & \multicolumn{3}{c}{\textbf{Make up \%}} \\
+\cmidrule(lr){2-4}
+\multicolumn{1}{c}{(packets)} & of flows & of packets & of octets \\
+\midrule
+1 & 24.6791 & 0.1918 & 0.0222 \\
+2 & 46.8966 & 0.5372 & 0.0621 \\
+4 & 58.3474 & 0.8443 & 0.1166 \\
+8 & 72.8801 & 1.5445 & 0.2946 \\
+16 & 83.6804 & 2.5336 & 0.6329 \\
+32 & 90.1068 & 3.6792 & 1.0955 \\
+64 & 93.7845 & 4.9759 & 1.7553 \\
+128 & 96.0390 & 6.5606 & 2.6692 \\
+256 & 97.5400 & 8.6773 & 4.0663 \\
+512 & 98.4853 & 11.3214 & 5.8372 \\
+1024 & 99.0747 & 14.6026 & 8.2060 \\
+2048 & 99.4336 & 18.6056 & 11.5164 \\
+4096 & 99.6565 & 23.5875 & 15.9273 \\
+8192 & 99.7895 & 29.5085 & 21.3647 \\
+16384 & 99.8717 & 36.8985 & 28.2454 \\
+32768 & 99.9285 & 47.1641 & 37.6190 \\
+65536 & 99.9676 & 61.1475 & 51.3659 \\
+131072 & 99.9892 & 76.1795 & 69.0095 \\
+262144 & 99.9971 & 86.8850 & 82.9267 \\
+524288 & 99.9991 & 92.5681 & 90.2957 \\
+1048576 & 99.9998 & 95.9341 & 94.6060 \\
+2097152 & 99.9999 & 97.9076 & 97.2219 \\
+4194304 & 100.0000 & 99.0470 & 98.8047 \\
+8388608 & 100.0000 & 99.4785 & 99.4073 \\
+16777216 & 100.0000 & 99.6083 & 99.5286 \\
+\bottomrule
+\end{tabular}
+
+

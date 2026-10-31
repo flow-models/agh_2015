@@ -1,5 +1,9 @@
 # agh_2015
 
+https://www.flow-models.org/?dataset=agh_2015
+
+## Citation
+
 Please cite as:
 
     @article{flows-agh,
@@ -15,6 +19,8 @@ Please cite as:
 
 Available at: http://arxiv.org/abs/1809.03486
 
+## Overview
+
 Based on NetFlow records collected on the Internet-facing interface of the AGH University of Krakow
 network during the consecutive period of 30 days.
 
@@ -23,7 +29,22 @@ Dormitories, populated with nearly 8000 students, generated 69% of the traffic. 
 Internet). In the case of rest of the university, downstream traffic made up 73% of the total traffic. Therefore,
 this model can also be considered as representative of residential traffic.
 
-In order to reproduce all steps towards fitting this model, please follow the [Makefile](Makefile).
+## Models
+
+Generated unfiltered artifacts are stored in the [ALL](ALL) directory. Filtered subsets are stored in nested directories named after each additive filter (e.g. [IPv4](IPv4), [IPv4/TCP](IPv4/TCP), [IPv4/UDP](IPv4/UDP), [IPv4/noDNS](IPv4/noDNS), [IPv4/UDP/noDNS](IPv4/UDP/noDNS)).
+
+## Reproduction
+
+Use the top-level [Makefile](Makefile) to reproduce the unfiltered model:
+
+    make histograms
+    make mixtures
+    make plots
+    make summary
+    make series
+    make first_mirror
+
+## Dataset summary
 
 | Parameter           |               Value |      Unit |
 |---------------------|--------------------:|----------:|
@@ -35,6 +56,7 @@ In order to reproduce all steps towards fitting this model, please follow the [M
 | Sampling rate       |                none |           |
 | Active timeout      |                 300 |   seconds |
 | Inactive timeout    |                  15 |   seconds |
+| Filter expression   |                   - |           |
 | Flow records        |        not included |           |
 | IP Anonymization    |                   - |           |
 |                     |                     |           |
